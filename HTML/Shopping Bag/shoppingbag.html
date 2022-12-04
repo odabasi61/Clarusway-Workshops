@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Shopping website" content="Technological tools" />
+    <title>Shopping List</title>
+    <script
+      src="https://kit.fontawesome.com/3a7b0a6463.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-image: linear-gradient(#e2e2e2, #fcfcfc);
+      }
+      table {
+        width: 100vh;
+        height: 30vh;
+        margin: 100px auto 10px;
+      }
+      .bottom {
+        width: 100vh;
+        height: 5vh;
+        font-size: 25px;
+        margin: 10px auto 10px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 30px;
+        padding: 5px;
+      }
+      .payment {
+        padding: 15px 30px;
+        transition: all 0.3s;
+      }
+      a:link,
+      a:visited {
+        background-color: #ee755f;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover,
+      a:active {
+        transform: scale(1.1);
+      }
+      h1 {
+        background-color: #2be72b;
+        color: white;
+        height: 12vh;
+        font-size: 60px;
+        padding-left: 20%;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alışveriş Sepeti</h1>
+
+    <table style="font-size: 22px">
+      <thead>
+        <tr style="color: white; background-color: #3f3f3f">
+          <th align="left">Ürün Kodu</th>
+          <th align="left">Ürün Adı</th>
+          <th align="center">Miktar</th>
+          <th align="right">Birim Fiyat</th>
+          <th align="right">Ara Toplam</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: #cdcdcd">
+          <td>154654</td>
+          <td>Notebook</td>
+          <td align="center">1</td>
+          <td align="right">5400₺</td>
+          <td align="right">5400₺</td>
+          <td align="center">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr style="background-color: #e8e8e8">
+          <td>456466</td>
+          <td>Klavye</td>
+          <td align="center">2</td>
+          <td align="right">80₺</td>
+          <td align="right">160₺</td>
+          <td align="center">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr style="background-color: #cdcdcd">
+          <td>564646</td>
+          <td>Monitör</td>
+          <td align="center">1</td>
+          <td align="right">700₺</td>
+          <td align="right">700₺</td>
+          <td align="center">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr style="background-color: #e8e8e8">
+          <td>123598</td>
+          <td>Mouse</td>
+          <td align="center">2</td>
+          <td align="right">50₺</td>
+          <td align="right">100₺</td>
+          <td align="center">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr style="background-color: #cdcdcd">
+          <td>613448</td>
+          <td>Play Station</td>
+          <td align="center">1</td>
+          <td align="right">2500₺</td>
+          <td align="right">2500₺</td>
+          <td align="center">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+        <tr style="background-color: #e8e8e8">
+          <td>789799</td>
+          <td>Usb Bellek</td>
+          <td align="center">3</td>
+          <td align="right">120₺</td>
+          <td align="right">360₺</td>
+          <td align="center">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-trash-can"></i>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="color: white; background-color: #595859" align="right">
+          <td colspan="4">Toplam</td>
+          <td>9220₺</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="bottom">
+      <a class="payment" href="#"
+        ><i class="fa-solid fa-cart-shopping"></i>Alışverişe Devam</a
+      >
+      <a class="payment" href="#"
+        ><i class="fa-regular fa-credit-card"></i> Ödemeye Geç</a
+      >
+    </div>
+  </body>
+</html>
