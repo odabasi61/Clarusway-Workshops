@@ -1,2 +1,3 @@
 definition: this is a survey form designed for the Netflix main page.
-![background_image](https://user-images.githubusercontent.com/114237174/206293699-faca7d3e-bcf7-47f0-9d79-2e6e426338b7.jpg)
+
+![Project_001_](https://user-images.githubusercontent.com/114237174/206294193-2386e52b-e085-454d-894d-5bb4d1cbf9c1.png)
