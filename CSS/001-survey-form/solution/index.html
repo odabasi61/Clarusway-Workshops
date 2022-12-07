@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">
+        <span class="span-1">net</span><span class="span-2">flix</span>
+      </h1>
+      <p id="description">
+        Thank you for signing up at Netflix. Tell us more about yourself.
+      </p>
+      <form action="" id="survey-form">
+        <div>
+          <label for="Name">Name</label> <br />
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div>
+          <label for="Age">Age</label> <br />
+          <input type="text" id="Age" name="Age" placeholder="Age" />
+        </div>
+        <div>
+          <label for="Email">Email</label> <br />
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div>
+          <label for="content">Content type</label> <br />
+          <select id="content" name="content" required/>
+          <option value="">Please choose one option:</option>
+            <option value="Series">Series</option>
+            <option value="Films">Films</option>
+            <option value="Documentaries">Documentaries</option>
+            <option value="Animations">Animations</option>
+            <option value="Cartoons">Cartoons</option>
+            </select>
+        </div>
+       <div class="movie">
+        <h4>Movie type</h4>
+        <div class="movie-checkbox">
+        <input type="checkbox" name="movie" id="movie" value="Comedy">Comedy</div>
+        <div class="movie-checkbox">
+        <input type="checkbox" name="movie" id="movie" value="Action">Action</div>
+        <div class="movie-checkbox">
+        <input type="checkbox" name="movie" id="movie" value="Romance" checked>Romance</div>
+    
+    </div>
+      </form>
+    </div>
+  </body>
+</html>

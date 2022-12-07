@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2022/11/24/02/28/clouds-7613361_960_720.png);
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 50px;
+}
+
+form {
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  padding: 20px;
+  background-color: rgb(133, 255, 189);
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 10px 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 110px;
+  text-align: left;
+}
+
+.buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.buttons input {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #85ffbd;
+  border: none;
+  transition: all 0.4s;
+}
+
+.buttons input:hover {
+  background-color: #fffb7d;
+  cursor: pointer;
+  transform: scale(1.1);
+}
