@@ -1,0 +1,92 @@
+* {
+  /* resetleme */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2022/12/01/17/52/sea-7629517_960_720.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*! body'nin default olarak yuksekligi yoktur. */
+  height: 100vh; /*?Tarayicinin gorunen alanin 100 % yuksekligi*/
+}
+
+h1 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+form {
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+
+  width: fit-content;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+/** label inline elementtir. Dolayısıyla width property si dogrudan calismaz */
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+.lang-div,
+.gender-div {
+  display: inline-block;
+}
+
+.lang-div label,
+.gender-div label {
+  width: auto;
+  margin-right: 10px;
+}
+
+.inputs {
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.inputs:focus:invalid {
+  border-bottom: 3px solid red;
+}
+
+.radio-check {
+  margin-bottom: 20px;
+  /* margin-left: 20px; */
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-container input {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(299, 100%, 70%);
+  padding: 10px;
+  transition: all 0.4s;
+}
+.btn-container input:hover {
+  background-color: hsl(299, 100%, 40%);
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.btn-container input:active {
+  transform: translateY(3px);
+}
+
+.textarea-div * {
+  vertical-align: middle;
+}
