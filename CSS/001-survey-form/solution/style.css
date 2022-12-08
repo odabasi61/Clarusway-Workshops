@@ -6,16 +6,16 @@
 
 body {
   background-image: url(img/background_image.jpg);
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
   text-align: center;
   color: white;
   font-size: 30px;
-  height: 120vh;
+  width: 100%;
 }
 
 #container {
   width: 95%;
-  height: 115vh;
   background-color: rgb(21, 18, 18, 0.4);
   margin: 2% auto;
 }
@@ -47,14 +47,13 @@ form {
 label {
   display: inline-block;
   text-align: left;
-  margin-bottom: 10px;
 }
 
 input {
   width: 100%;
   height: 50px;
   padding: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   border-radius: 3px;
   border: none;
 }
@@ -66,46 +65,46 @@ input:focus:invalid {
 select {
   width: 90%;
   height: 40px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   border-radius: 3px;
   border: none;
 }
 
 .movie {
   margin-top: 5px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .movie-checkbox {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: -15px;
+  gap: 8px;
+  margin-bottom: -25px;
 }
 
 .movie input {
-  width: 4%;
+  width: 2%;
   margin: 0;
 }
 
 .gender {
-  margin-top: 25px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .gender-checkbox {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: -15px;
+  gap: 8px;
+  margin-bottom: -25px;
 }
 
 .gender-checkbox:nth-child(4) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .gender input {
-  width: 4%;
+  width: 2%;
   margin: 0;
 }
 
@@ -118,6 +117,15 @@ button {
   color: white;
   border: none;
   margin-top: 15px;
+  transition: all 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: wheat;
+  color: red;
+  transform: scale(1.2);
+  font-weight: bold;
 }
 
 #submit {

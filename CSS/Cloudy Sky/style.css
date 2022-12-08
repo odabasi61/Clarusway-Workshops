@@ -7,7 +7,9 @@
 body {
   background-image: url(https://cdn.pixabay.com/photo/2022/11/24/02/28/clouds-7613361_960_720.png);
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
+  height: 100vh;
 }
 
 h1 {
@@ -41,6 +43,7 @@ label {
 }
 
 input {
+  padding: 5px;
   height: 30px;
   border-radius: 5px;
   border: none;
