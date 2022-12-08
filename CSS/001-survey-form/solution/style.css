@@ -131,3 +131,9 @@ button:hover {
 #submit {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
