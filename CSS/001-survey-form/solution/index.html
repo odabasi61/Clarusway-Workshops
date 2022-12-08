@@ -19,16 +19,16 @@
     </p>
     <form action="" id="survey-form">
       <div>
-        <label for="Name">Name</label> <br />
-        <input type="text" id="Name" name="Name" placeholder="Enter your name" />
+        <label for="Name">Full Name</label> <br />
+        <input class="inputs" type="text" id="Name" name="Name" placeholder="Enter your full name" />
       </div>
       <div>
-        <label for="Age">Enter your age</label> <br />
-        <input type="text" id="Age" name="Age" placeholder="Age" />
+        <label for="Age">Age</label> <br />
+        <input class="inputs" type="text" id="Age" name="Age" placeholder="Enter your age" />
       </div>
       <div>
         <label for="Email">Email</label> <br />
-        <input type="email" id="Email" name="Email" placeholder="Enter your email" />
+        <input class="inputs" type="email" id="Email" name="Email" placeholder="Enter your email" />
       </div>
       <div>
         <label for="content">Content type</label> <br />
@@ -44,26 +44,31 @@
       <div class="movie">
         <h4>Movie type</h4>
         <div class="movie-checkbox">
-          <input type="checkbox" id="type" name="movie" >
-          <label for="type">Comedy</label>
+          <input type="checkbox" id="comedy" name="movie" >
+          <label for="comedy">Comedy</label>
         </div>
         <div class="movie-checkbox">
-          <input type="checkbox" name="movie" value="Action">Action
+          <input type="checkbox" id="action" name="movie" value="Action">
+          <label for="action">Action</label>
         </div>
         <div class="movie-checkbox">
-          <input type="checkbox" name="movie" value="Romance" checked>Romance
+          <input type="checkbox" id="romance" name="movie" value="Romance" checked>
+          <label for="romance">Romance</label>
         </div>
       </div>
       <div class="gender">
         <h4>Gender</h4>
         <div class="gender-checkbox">
-          <input type="radio" name="gender" value="Male">Male
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
         </div>
         <div class="gender-checkbox">
-          <input type="radio" name="gender" value="Female">Female
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
         </div>
         <div class="gender-checkbox">
-          <input type="radio" name="gender" value="Others">Others
+          <input type="radio" id="others" name="gender" value="Others">
+          <label for="others">Others</label>
         </div>
       </div>
       <div>
