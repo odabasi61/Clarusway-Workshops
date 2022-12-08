@@ -22,7 +22,11 @@ h1 {
 }
 
 form {
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgb(217, 175, 217, 0.7) 0%,
+    rgb(151, 217, 225, 0.7) 100%
+  );
 
   width: fit-content;
   margin: 20px auto;
@@ -52,6 +56,7 @@ label {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
 .inputs:focus:invalid {
@@ -89,4 +94,8 @@ label {
 
 .textarea-div * {
   vertical-align: middle;
+}
+
+textarea {
+  resize: none;
 }
