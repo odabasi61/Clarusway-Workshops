@@ -20,20 +20,10 @@ body {
   margin: 2% auto;
 }
 
-span {
+h1 span {
   font-weight: bold;
   font-size: 60px;
   text-transform: uppercase;
-}
-
-textarea {
-  width: 90%;
-  height: 10vh;
-  resize: none;
-}
-
-textarea:focus {
-  outline: none;
 }
 
 .span-2 {
@@ -134,6 +124,16 @@ button:hover {
   color: red;
   transform: scale(1.2);
   font-weight: bold;
+}
+
+textarea {
+  width: 90%;
+  height: 10vh;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 #submit {

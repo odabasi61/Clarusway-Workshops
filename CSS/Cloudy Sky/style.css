@@ -23,9 +23,12 @@ form {
   display: inline-block;
   width: fit-content;
   padding: 20px;
-  background-color: rgb(133, 255, 189);
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 10px 20px;
+  background-image: linear-gradient(
+    45deg,
+    rgb(133, 255, 189) 0%,
+    rgb(255, 251, 125) 100%
+  );
+  box-shadow: 10px 10px 10px #5e5858;
 }
 
 label {
@@ -47,6 +50,7 @@ input {
   height: 30px;
   border-radius: 5px;
   border: none;
+  outline: none;
 }
 
 .buttons input {
