@@ -148,9 +148,21 @@ textarea:focus {
 
 @media (max-width: 768px) {
   form {
-    width: 90%;
+    width: 60%;
   }
   body {
     font-size: 100%;
   }
+  
 }
+
+@media (max-width: 520px) {
+  form {
+    width: 80%;
+  }
+  body {
+    font-size: 90%;
+  }
+  select {height: 25px;}
+  .inputs {height: 25px;}
+  }
