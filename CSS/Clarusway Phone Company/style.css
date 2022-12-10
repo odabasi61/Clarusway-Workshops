@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  padding: 40px;
+  width: 100%;
+  background-color: red;
+  color: aliceblue;
+  font-size: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav {
+  background-color: blueviolet;
+  padding: 20px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+h2 {
+  margin: 15px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+figcaption {
+  margin-bottom: 60px;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: aliceblue;
+}
