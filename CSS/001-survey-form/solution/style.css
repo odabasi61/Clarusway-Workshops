@@ -6,7 +6,7 @@
 
 body {
   background-image: url(img/background_image.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   color: white;
@@ -89,7 +89,9 @@ select {
   margin: 0;
 }
 
-.movie label {font-size: 15px;}
+.movie label {
+  font-size: 15px;
+}
 
 .gender {
   margin-top: 20px;
@@ -112,7 +114,9 @@ select {
   margin: 0;
 }
 
-.gender label {font-size: 15px;}
+.gender label {
+  font-size: 15px;
+}
 
 button {
   display: inline-block;
@@ -161,7 +165,6 @@ textarea:focus {
   body {
     font-size: 100%;
   }
-  
 }
 
 @media (max-width: 520px) {
@@ -171,6 +174,10 @@ textarea:focus {
   body {
     font-size: 90%;
   }
-  select {height: 25px;}
-  .inputs {height: 25px;}
+  select {
+    height: 25px;
   }
+  .inputs {
+    height: 25px;
+  }
+}
