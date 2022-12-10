@@ -50,6 +50,7 @@ textarea {
   outline: none;
 }
 
+
 .submit {
   width: fit-content;
   margin: 5px auto;
@@ -62,3 +63,4 @@ button {
 button:hover {
   cursor: pointer;
 }
+

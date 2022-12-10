@@ -12,25 +12,25 @@
 <body>
   <div id="container">
     <h1 id="title">
-      <span class="span-1">net</span><span class="span-2">flix</span>
+      net<span class="span-2">flix</span>
     </h1>
     <p id="description">
       Thank you for signing up at Netflix. Tell us more about yourself.
     </p>
     <form action="" id="survey-form">
-      <div>
+      <div class="box">
         <label for="Name">Full Name</label> <br />
         <input class="inputs" type="text" id="Name" name="Name" placeholder="Enter your full name" />
       </div>
-      <div>
+      <div class="box">
         <label for="Age">Age</label> <br />
-        <input class="inputs" type="text" id="Age" name="Age" placeholder="Enter your age" />
+        <input class="inputs" type="number" id="Age" name="Age" placeholder="Enter your age" />
       </div>
-      <div>
+      <div class="box">
         <label for="Email">Email</label> <br />
         <input class="inputs" type="email" id="Email" name="Email" placeholder="Enter your email" />
       </div>
-      <div>
+      <div class="box">
         <label for="content">Content type</label> <br />
         <select id="content" name="content" required />
         <option value="">Please choose one option:</option>
@@ -72,8 +72,8 @@
         </div>
       </div>
       <div>
-        <label for="Feed back">Feed back</label> <br>
-        <textarea name="Feed back" id="Feedback"></textarea>
+        <label for="feedback">Feed back</label> <br>
+        <textarea name="feedback" id="feedback" placeholder="Enter your comments"></textarea>
       </div>
       <div id="submit">
         <button type="submit">Submit</button>
