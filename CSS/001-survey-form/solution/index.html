@@ -17,7 +17,7 @@
     <p id="description">
       Thank you for signing up at Netflix. Tell us more about yourself.
     </p>
-    <form action="" id="survey-form">
+    <form action="result.html" method="get" id="survey-form">
       <div class="box">
         <label for="Name">Full Name</label> <br />
         <input class="inputs" type="text" id="Name" name="Name" placeholder="Enter your full name" />
@@ -44,7 +44,7 @@
       <div class="movie">
         <span>Movie type</span>
         <div class="movie-checkbox">
-          <input type="checkbox" id="comedy" name="movie" >
+          <input type="checkbox" id="comedy" name="movie" value="comedy">
           <label for="comedy">Comedy</label>
         </div>
         <div class="movie-checkbox">
@@ -76,7 +76,7 @@
         <textarea name="feedback" id="feedback" placeholder="Enter your comments"></textarea>
       </div>
       <div id="submit">
-        <button type="submit">Submit</button>
+        <button type="submit" value="send">Submit</button>
       </div>
     </form>
   </div>
