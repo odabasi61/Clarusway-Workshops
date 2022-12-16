@@ -9,7 +9,7 @@ else if (operator == "-") result = num1 - num2;
 else if (operator == "*") result = num1 * num2;
 else if (operator == "/") result = num1 / num2;
 else {
-  console.log("Please choose one of the operator above.");
+  console.log("Please choose one of the operators above.");
 }
 
 console.log(result);

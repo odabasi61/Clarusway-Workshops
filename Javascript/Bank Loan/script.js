@@ -1,9 +1,8 @@
-const income = Number(prompt("Please enter your income"));
-const outcome = Number(prompt("Please enter your outcome"));
-const minimumWage = 5500;
-
-if (income - outcome > minimumWage) {
-  console.log("🎉 You are eligible for bank loan");
-} else {
-  console.log("⛔️ No credit!");
-}
+let income = Number(prompt("Please enter your income"));
+let outcome = Number(prompt("Please enter your outcome"));
+let minimumWage = 5500;
+const credit =
+  income - outcome > minimumWage
+    ? "🎉 You are eligible for bank loan"
+    : "⛔️ No credit!";
+console.log(credit);
