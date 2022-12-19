@@ -1,6 +1,6 @@
-let attempt = 0;
 let secretNumber = Math.trunc(Math.random() * 10) + 1; // this code generates a random number between 0-10
 let score = 5;
+let attempt = 0;
 
 while (true) {
   attempt = attempt + 1;
@@ -27,7 +27,14 @@ while (true) {
         break;
       }
     } else {
-      console.log("Please enter a digit between 0 and 10.");
+      if (isNaN(yourGuess) || yourGuess >= 0 || yourGuess <= 10) {
+        if (score > 0) {
+          console.log("Please enter a digit between 0 and 10.");
+        } else {
+          console.log("You lost the game!");
+          break;
+        }
+      }
     }
   }
 }
