@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8d6d0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Unbounded", sans-serif;
+}
+
+.main {
+  background-color: #d46461;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin: 10% auto;
+  width: 60%;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  padding: 200px 50px 0;
+  font-size: 30px;
+}
+
+span {
+  color: #d6ea3c;
+}
+
+p {
+  font-size: 45px;
+  font-weight: 700;
+  color: #4a3a3b;
+  line-height: 1;
+  padding: 50px;
+}
+
+img {
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid black;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1600px) {
+  img {
+    width: 25%;
+  }
+  h1 {
+    padding: 180px 40px 0;
+    font-size: 28px;
+  }
+  p {
+    padding: 40px;
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  img {
+    width: 25%;
+  }
+  h1 {
+    padding: 160px 35px 0;
+    font-size: 24px;
+  }
+  p {
+    padding: 35px;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  img {
+    width: 25%;
+  }
+  h1 {
+    padding: 120px 25px 0;
+    font-size: 20px;
+  }
+  p {
+    padding: 25px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 25%;
+  }
+  h1 {
+    padding: 70px 20px 0;
+    font-size: 16px;
+  }
+  p {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
