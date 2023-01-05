@@ -12,7 +12,8 @@ h2 {
 }
 .container {
   width: 60vw;
-  margin: 0 auto;
+  height: calc(100vh - 30px);
+  margin: 1rem auto;
   display: grid;
   background-color: white;
   grid-template-columns: repeat(4, 1fr);
@@ -51,4 +52,17 @@ main {
 }
 footer {
   grid-area: footer;
+}
+
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 18px;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 14px;
+  }
 }
