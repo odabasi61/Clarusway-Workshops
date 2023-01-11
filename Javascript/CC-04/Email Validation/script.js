@@ -1,16 +1,11 @@
 "use strict";
 
-// const email = "username@username.com";
+const email = prompt("Please enter a valid email adress:");
 
-let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
+function isValidEmail(email) {
+  var re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/;
+  return re.test(String(email).toLowerCase());
+}
 
-let testEmails = [
-  "notanemail.com",
-  "workingexample@email.com",
-  "another_working@somethingelse.org",
-  "notworking@1.com",
-];
-
-testEmails.forEach((address) => {
-  console.log(regex.test(address));
-});
+console.log(isValidEmail(email));
