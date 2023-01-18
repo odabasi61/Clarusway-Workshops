@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004289;
+  height: 100vh;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #63e6be;
+  padding-bottom: 1rem;
+}
+
+input {
+  outline: none;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #63e6be;
+  color: #004289;
+  border: none;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #63e6be;
+  color: #004289;
+}
+
+span {
+  color: #63e6be;
+  font-size: 1.3rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
