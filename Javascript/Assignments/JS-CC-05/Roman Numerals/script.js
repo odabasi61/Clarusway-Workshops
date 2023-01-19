@@ -3,7 +3,12 @@
 const check = document.querySelector(".check");
 const result = document.querySelector(".result");
 
-check.addEventListener("click", function () {
+window.onload = function () {
+  document.querySelector(".inp").focus();
+};
+
+check.addEventListener("click", function (e) {
+  e.preventDefault();
   let inp = Number(document.querySelector(".inp").value);
 
   if (!inp) {
@@ -14,6 +19,7 @@ check.addEventListener("click", function () {
     result.textContent = "";
   } else {
     result.textContent = convertToRoman(inp);
+    e.target.closest("form").reset();
   }
 });
 
