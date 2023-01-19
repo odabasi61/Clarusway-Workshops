@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boostrap Info</title>
+    <link
+      rel="stylesheet"
+      href="./assess/lib/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> Navbar text with an inline element </span>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="container carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/photo1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/photo2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="/img/photo3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="text-center bg-secondary text-warning">INTRO!</h1>
+    <p class="h1">Lorem ipsum dolor sit amet.</p>
+    <p class="h2">Lorem ipsum dolor sit amet.</p>
+    <p class="h3">Lorem ipsum dolor sit amet.</p>
+    <p class="h4">Lorem ipsum dolor sit amet.</p>
+    <p class="h5">Lorem ipsum dolor sit amet.</p>
+    <p class="h6">Lorem ipsum dolor sit amet.</p>
+
+    <p class="display-1">Lorem ipsum dolor sit amet.</p>
+    <p class="display-2">Lorem ipsum dolor sit amet.</p>
+    <p class="display-3">Lorem ipsum dolor sit amet.</p>
+    <p class="display-4">Lorem ipsum dolor sit amet.</p>
+    <p class="display-5">Lorem ipsum dolor sit amet.</p>
+    <p class="display-6">Lorem ipsum dolor sit amet.</p>
+
+    <div class="bg-success w-25 p-3 mx-auto">width 25%</div>
+    <div class="bg-success w-50 p-3 mx-auto">width 50%</div>
+    <div class="bg-success w-75 p-3 mx-auto">width 75%</div>
+    <div class="bg-success w-100 p-3 mx-auto">width 100%</div>
+    <div class="bg-success w-auto p-3 mx-auto">width auto</div>
+
+    <div class="container-fluid bg-danger text-light text-center">grid</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5 bg-secondary">5</div>
+        <div class="col-7 bg-primary">7</div>
+
+        <div class="col-6 bg-danger">6</div>
+        <div class="col-6 bg-warning">6</div>
+
+        <div class="col-3 bg-success">3</div>
+        <div class="col-9 bg-primary">9</div>
+
+        <div class="col-8 bg-danger">8</div>
+        <div class="col-1 bg-secondary">1</div>
+        <div class="col-3 bg-warning">3</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container-fluid border border-danger text-light text-center">
+      <div class="row justify-content-center">
+        <div class="col-4 bg-primary">4</div>
+        <div class="col-4 bg-warning">4</div>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-4 bg-primary">4</div>
+        <div class="col-4 bg-warning">4</div>
+      </div>
+
+      <div class="row justify-content-around">
+        <div class="col-4 bg-primary">4</div>
+        <div class="col-4 bg-warning">4</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h1>BREAK POINT</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 bg-danger">1</div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 bg-warning">2</div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 bg-primary">3</div>
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2 bg-secondary">4</div>
+      </div>
+    </div>
+
+    <h1>Display Example</h1>
+
+    <div class="container">
+      <div class="bg-danger d-sm-none">Sadece xs</div>
+      <div class="bg-warning d-none d-sm-block">xs hariç</div>
+      <div class="bg-secondary d-none d-md-block d-lg-none">Sadece md</div>
+    </div>
+
+    <script src="./assess/lib/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+  </body>
+</html>
