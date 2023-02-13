@@ -1,115 +1,76 @@
-# Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+  Pricing
+  Product
+  About Us
+  Careers
+  Community
 
-## Table of contents
+  Get Started
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  Bring everyone together to build better products.
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+  Manage makes it simple for software teams to plan day-to-day 
+  tasks while keeping the larger team goals in view.
 
-## Overview
+  Get Started
 
-### The challenge
+  What’s different about Manage?
 
-Users should be able to:
+  Manage provides all the functionality your team needs, without 
+  the complexity. Our software is tailor-made for modern digital 
+  product teams. 
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- See all testimonials in a horizontal slider
-- Receive an error message when the newsletter sign up `form` is submitted if:
-  - The `input` field is empty
-  - The email address is not formatted correctly
+  01
+  Track company-wide progress
+  See how your day-to-day tasks fit into the wider vision. Go from 
+  tracking progress at the milestone level all the way done to the 
+  smallest of details. Never lose sight of the bigger picture again.
 
-### Screenshot
+  02
+  Advanced built-in reports
+  Set internal delivery estimates and track progress toward company 
+  goals. Our customisable dashboard helps you build out the reports 
+  you need to keep key stakeholders informed.
 
-![](./screenshot.jpg)
+  03
+  Everything you need in one place
+  Stop jumping from one service to another to communicate, store files, 
+  track tasks and share documents. Manage offers an all-in-one team 
+  productivity solution.
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+  What they’ve said
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+  Anisha Li
+  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+  Ali Bravo
+  “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+  Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”
 
-### Links
+  Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.”
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+  Get Started
 
-## My process
+  Simplify how your team works today.
+  Get Started
 
-### Built with
+  Home
+  Pricing
+  Products
+  About Us
+  Careers
+  Community
+  Privacy Policy
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+  Updates in your inbox…
+  Go
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+  Copyright 2020. All Rights Reserved
