@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(30, 2, 47),
+    rgb(114, 20, 93),
+    rgb(19, 179, 227)
+  );
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background: linear-gradient(to right, rgb(155, 84, 79), rgb(130, 174, 163));
+  color: rgb(46, 54, 52);
+}
+
+.header img {
+  width: 150px;
+}
+
+.header h2 {
+  font-size: 3rem;
+}
+
+.lesson {
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(
+    to right,
+    rgb(30, 2, 47),
+    rgb(114, 20, 93),
+    rgb(19, 179, 227)
+  );
+}
+
+.lesson-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.lesson-card img {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.les-card-div {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  gap: 1rem;
+  color: rgb(244, 164, 106);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.les-card-div p {
+  margin: 0;
+}
+
+.les-card-info span {
+  color: white;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header img {
+    width: 80px;
+  }
+
+  .les-card-div {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .lesson {
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+  .lesson-card img {
+    width: 60px;
+  }
+
+  .header img {
+    width: 100px;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .les-card-div {
+    width: 100%;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .lesson-card img {
+    width: 80px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .lesson-card {
+    width: 80%;
+  }
+}
