@@ -6,10 +6,9 @@ const Person = (props) => {
   const { name, tel, img } = props;
   return (
     <div>
-      <h2>Hi my name is {name}</h2>
       <Msg isim={name} />
-      <img style={{ width: "300px" }} src={img} alt="" />
-      <p>tel: {tel}</p>
+      <img style={{ width: "300px", height: "300px" }} src={img} alt="" />
+      <p style={{ fontWeight: "bold" }}>tel: {tel}</p>
     </div>
   );
 };

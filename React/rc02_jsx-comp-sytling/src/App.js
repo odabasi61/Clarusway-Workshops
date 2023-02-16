@@ -9,8 +9,8 @@ function App() {
     // jsx kısmı. return içinde div veya başka bir fragment olmazsa sadece bir element koyabiliriz. birden fazla koymak için bir fragment içine almalıyız
     <div>
       <Header />
-      <Footer />
       <Content />
+      <Footer />
     </div>
   );
 }

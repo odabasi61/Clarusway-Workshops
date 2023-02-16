@@ -3,10 +3,14 @@
 //* kullanima kullanima acimiş olur. Kullanmak icin hedef
 //* dosyada import .... from "./..." ile import yapmak yeterlidir.
 
+const myStyle = {
+  padding: "2rem 0",
+};
+
 function Header() {
   return (
     <header>
-      <h1>React JS</h1>
+      <h1 style={myStyle}>React JS</h1>
     </header>
   );
 }

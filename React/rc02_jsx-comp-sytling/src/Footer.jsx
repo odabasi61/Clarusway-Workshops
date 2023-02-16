@@ -4,7 +4,9 @@
 export const Footer = () => {
   return (
     <footer>
-      <p>copyright by clarusway {new Date().getFullYear()}</p>
+      <p style={{ textAlign: "center" }}>
+        copyright by clarusway {new Date().getFullYear()}
+      </p>
     </footer>
   );
 };
