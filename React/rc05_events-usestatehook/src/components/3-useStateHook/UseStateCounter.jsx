@@ -32,7 +32,7 @@ const UseStateCounter = () => {
     if (count > 0) {
       setCount(count - 1);
     } else {
-      alert("counter cannot be less tham zero");
+      alert("counter cannot be less than zero");
     }
   };
 

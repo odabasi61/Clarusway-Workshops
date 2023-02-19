@@ -50,14 +50,6 @@ const UseStateObject = () => {
     }
   };
 
-  // const handleNameToggle = () => {
-  //   setPerson({
-  //     ...person,
-  //     name: person.name.toUpperCase(),
-  //     surname: person.surname.toUpperCase(),
-  //   });
-  // };
-
   return (
     <div className="container text-center mt-5">
       <h2 className="text-danger">Use State Object</h2>
