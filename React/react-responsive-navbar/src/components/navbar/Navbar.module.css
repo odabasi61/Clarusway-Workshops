@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background: #1b2430;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.animation {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: white;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+.animation:hover {
+  color: #17cf97;
+}
+
+.animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #17cf97;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.mobile i {
+  color: white;
+  cursor: pointer;
+}
