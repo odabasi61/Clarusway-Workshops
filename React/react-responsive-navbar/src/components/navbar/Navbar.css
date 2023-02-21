@@ -46,4 +46,33 @@ ul {
 .mobile i {
   color: white;
   cursor: pointer;
+  font-size: 24px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 60px;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 1rem;
+    background-color: #2a3239;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .present {
+    right: 0;
+  }
+
+  .mobile {
+    display: block;
+  }
 }
