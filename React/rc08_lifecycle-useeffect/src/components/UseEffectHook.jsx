@@ -58,7 +58,6 @@ const UseEffectHook = () => {
       console.log("Unmounting");
     };
   }, []);
-
   console.log("Rendering");
 
   return (

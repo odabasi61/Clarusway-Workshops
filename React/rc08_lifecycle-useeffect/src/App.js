@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Timer from "./components/Timer";
+import UseEffectHook from "./components/UseEffectHook";
 // import LifeCycleMethods from "./components/LifeCycleMethods";
 // import UseEffectHook from "./components/UseEffectHook";
 import User from "./components/User";
@@ -16,7 +18,6 @@ function App() {
       {/* {toggle && <LifeCycleMethods />} */}
 
       {/* {toggle && <UseEffectHook />} */}
-
       <User />
     </div>
   );
