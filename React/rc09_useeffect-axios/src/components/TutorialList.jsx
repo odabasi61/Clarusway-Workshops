@@ -1,7 +1,7 @@
-import { FaEdit } from "react-icons/fa"
-import { AiFillDelete } from "react-icons/ai"
-import axios from "axios"
-import EditTutorial from "./EditTutorial"
+import { FaEdit } from "react-icons/fa";
+import { AiFillDelete } from "react-icons/ai";
+import axios from "axios";
+import EditTutorial from "./EditTutorial";
 // const tutorials = [
 //   {
 //     id: 1,
@@ -14,27 +14,27 @@ import EditTutorial from "./EditTutorial"
 //     description: "JS library for UI design",
 //   },
 // ]
-
+// üstte yorumda olan mock data bilgilerine artık ihtiyacımız yok. tutorials ismini verdiğimiz prop sayesinde (home dan geldi) bilgiler buraya geliyor
 const TutorialList = ({ tutorials, getTutorials }) => {
   const deleteTutorial = async (id) => {
-    const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials"
+    const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials";
     try {
-      await axios.delete(`${BASE_URL}/${id}/`)
+      await axios.delete(`${BASE_URL}/${id}/`);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-    getTutorials()
-  }
+    getTutorials();
+  };
 
   const editTutorial = async ({ id, title, description }) => {
-    const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials"
+    const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials";
     try {
-      await axios.put(`${BASE_URL}/${id}/`, { title, description })
+      await axios.put(`${BASE_URL}/${id}/`, { title, description });
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-    getTutorials()
-  }
+    getTutorials();
+  };
 
   return (
     <div className="container mt-4">
@@ -51,7 +51,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
         </thead>
         <tbody>
           {tutorials?.map((item) => {
-            const { id, title, description } = item
+            const { id, title, description } = item;
             return (
               <tr key={id}>
                 <th>{id}</th>
@@ -80,14 +80,14 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                   />
                 </td>
               </tr>
-            )
+            );
           })}
         </tbody>
       </table>
 
       <EditTutorial />
     </div>
-  )
-}
+  );
+};
 
-export default TutorialList
+export default TutorialList;
