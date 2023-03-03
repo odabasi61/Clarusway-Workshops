@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link, Navigate, useNavigate } from "react-router-dom"
 
-//? Link, NavLink ve Navigate componentleri declerative routing
+//? Link, NavLink ve Navigate componentleri declarative routing
 //? gerceklestirmek icin kullanilir.
 //? Ornegin: Link ve NavLink Sayfada gorulebilen, kullanciyla
 //? bir etkilesim icerisinde bulunarak yonledirme yapilan bir
