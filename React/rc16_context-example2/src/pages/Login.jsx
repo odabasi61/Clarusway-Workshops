@@ -1,25 +1,25 @@
-import { useState, useContext } from "react";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import { LoginContext } from "../context/LoginContext";
-import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react"
+import Container from "react-bootstrap/Container"
+import Button from "react-bootstrap/Button"
+import Form from "react-bootstrap/Form"
+import { useLoginContext } from "../context/LoginProvider"
+import { useNavigate } from "react-router-dom"
 
 const Login = () => {
-  // bunlar local state. 
-  // const [user, setUser] = useState({ email: "", password: "" });
-  
-  // daha geniş alanda kullanmak için app.js de yeniden yazdık. ordan usecontext(logincontext) ile props olarak (value) gönderdik ve burada usecontext ile aldık. logincontextle geldiği için paranteze onu aldık.
+  //? Local State
+  // const [user, setUser] = useState({ email: "", password: "" })
 
-  // şimdi statelerimiz global oldu.
-  const { user, setUser } = useContext(LoginContext)
-  
-  const navigate = useNavigate();
+  //! 3-) Consuming of Login COntext
+  const { user, setUser } = useLoginContext()
+
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate('/');
-  };
+    e.preventDefault()
+    navigate(-1)
+  }
+
+  console.log(user)
 
   return (
     <Container>

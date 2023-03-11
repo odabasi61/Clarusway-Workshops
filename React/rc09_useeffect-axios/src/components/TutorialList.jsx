@@ -2,20 +2,12 @@ import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import axios from "axios";
 import EditTutorial from "./EditTutorial";
-// const tutorials = [
-//   {
-//     id: 1,
-//     title: "JS",
-//     description: "JS is a programming language",
-//   },
-//   {
-//     id: 2,
-//     title: "React",
-//     description: "JS library for UI design",
-//   },
-// ]
-// üstte yorumda olan mock data bilgilerine artık ihtiyacımız yok. tutorials ismini verdiğimiz prop sayesinde (home dan geldi) bilgiler buraya geliyor
+import { useState } from "react";
+
 const TutorialList = ({ tutorials, getTutorials }) => {
+  // verileri göndermem için bir state lazım ve o state ile verileri gönderiyorum.
+  const [item, setItem] = useState("");
+
   const deleteTutorial = async (id) => {
     const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials";
     try {
@@ -26,15 +18,15 @@ const TutorialList = ({ tutorials, getTutorials }) => {
     getTutorials();
   };
 
-  const editTutorial = async ({ id, title, description }) => {
-    const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials";
-    try {
-      await axios.put(`${BASE_URL}/${id}/`, { title, description });
-    } catch (error) {
-      console.log(error);
-    }
-    getTutorials();
-  };
+  // const editTutorial = async ({ id, title, description }) => {
+  //   const BASE_URL = "https://tutorial-api.fullstack.clarusway.com/tutorials";
+  //   try {
+  //     await axios.put(`${BASE_URL}/${id}/`, { title, description });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  //   getTutorials();
+  // };
 
   return (
     <div className="container mt-4">
@@ -71,6 +63,10 @@ const TutorialList = ({ tutorials, getTutorials }) => {
                     //     description: "REACT",
                     //   })
                     // }
+
+                    // edirtutorial fonksiyonunun çalışması için bana id, title, description yani modaldan verilerin gelmesi gerekiyor. işte burada tutorial list teki onClick yardımcı olacak. bana item gönderecek.
+                    onClick={() => setItem(item)}
+                    // mapteki verileri item ile edittuorial a gönderiyorum.bunlar eski değerler. buttona tıklayınca eski değerler görünmesi için. butona tıklanıldıgında hem state guncellenıyor hemde Edittutorial e verıler gıdıyor.
                   />
                   <AiFillDelete
                     size={22}
@@ -85,7 +81,7 @@ const TutorialList = ({ tutorials, getTutorials }) => {
         </tbody>
       </table>
 
-      <EditTutorial />
+      <EditTutorial getTutorials={getTutorials} item={item} />
     </div>
   );
 };

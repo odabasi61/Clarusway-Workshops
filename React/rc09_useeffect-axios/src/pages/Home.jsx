@@ -17,7 +17,7 @@ const Home = () => {
       console.log(error);
     }
   };
-  console.log(tutorials);
+  // console.log(tutorials);
 
   //? componentDidMount
   // bu aşama yukardaki fonksiyonun sonsuz döngüye girmesini engelliyor
