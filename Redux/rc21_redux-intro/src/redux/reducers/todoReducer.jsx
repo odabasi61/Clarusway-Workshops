@@ -1,4 +1,9 @@
-import { ADD_TODO } from "../types/todoTypes";
+import {
+  ADD_TODO,
+  CLEAR_TODO,
+  TOGGLE_TODO,
+  DELETE_TODO,
+} from "../types/todoTypes";
 // case kısmında 'ADD_TODO' şeklinde olan kısım todotypes dosyasında tırnaklardan çıkarıldı ve buraya bu şekilde import edildi.
 
 const initialState = {
@@ -17,6 +22,20 @@ const todoReducer = (state = initialState, { type, payload }) => {
           ...state.todoList,
           { id: new Date().getTime(), text: payload, completed: false },
         ],
+      };
+    case CLEAR_TODO:
+      return initialState;
+    case TOGGLE_TODO:
+      return {
+        ...state,
+        todoList: state.todoList.map((todo) =>
+          todo.id === payload ? { ...todo, completed: !todo.completed } : todo
+        ),
+      };
+    case DELETE_TODO:
+      return {
+        ...state,
+        todoList: state.todoList.filter((item) => item.id !== payload),
       };
 
     default:

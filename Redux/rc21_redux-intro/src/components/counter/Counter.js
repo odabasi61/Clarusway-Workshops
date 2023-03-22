@@ -18,7 +18,7 @@ const Counter = () => {
   return (
     <div className="app">
       <h2 className="counter-header">Counter With Redux</h2>
-      <h1>counter:{counter}</h1>
+      <h1>counter: {counter}</h1>
       <div>
         <button
           className="counter-button positive"
@@ -37,7 +37,7 @@ const Counter = () => {
         <button
           className="counter-button negative"
           // onClick={() => dispatch({ type: "DECREASE" })}
-          onClick={() => dispatch(dec())}
+          onClick={() => counter > 0 && dispatch(dec())}
         >
           decrease
         </button>

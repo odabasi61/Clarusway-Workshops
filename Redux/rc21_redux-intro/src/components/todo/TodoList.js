@@ -1,11 +1,17 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import TodoItem from "./TodoItem";
+import { clearTodo } from "../../redux/actions/todoAction";
 
 const TodoList = () => {
   const todoList = useSelector((state) => state.todo.todoList);
   // state içindeki todo içindeki todolisti al. burdaki todo keyi index.jsde reducerlar birleşirken verildi.
 
-  const handleClearList = () => {};
+  const dispatch = useDispatch();
+  // cleartodo fonksiyonunu uygulayabilmek için usedispatch çağırıp uyguladık.
+
+  const handleClearList = () => {
+    dispatch(clearTodo());
+  };
 
   return (
     <div>
