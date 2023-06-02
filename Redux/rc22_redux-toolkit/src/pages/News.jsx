@@ -1,27 +1,28 @@
-import Box from "@mui/material/Box"
-import Card from "@mui/material/Card"
-import CardActions from "@mui/material/CardActions"
-import CardContent from "@mui/material/CardContent"
-import Button from "@mui/material/Button"
-import Typography from "@mui/material/Typography"
-import { CardMedia } from "@mui/material"
-import { getNews, clearNews } from "../features/newsSlice"
-import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import loadingGif from "../assets/loading.gif"
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { CardMedia } from "@mui/material";
+import { getNews, clearNews } from "../features/newsSlice";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import loadingGif from "../assets/loading.gif";
 
 const News = () => {
-  const dispatch = useDispatch()
-  const { news, error, loading } = useSelector((state) => state.news)
+  const dispatch = useDispatch();
+  const { news, error, loading } = useSelector((state) => state.news);
 
   useEffect(() => {
-    dispatch(getNews())
+    dispatch(getNews());
 
     //? cleanup funct (componentDidUnmount)
+    // logout olduğunda veri almayı kesmesi durumu
     return () => {
-      dispatch(clearNews())
-    }
-  }, [])
+      dispatch(clearNews());
+    };
+  }, []);
 
   return (
     <>
@@ -71,7 +72,7 @@ const News = () => {
         ))}
       </Box>
     </>
-  )
-}
+  );
+};
 
-export default News
+export default News;
